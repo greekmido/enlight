@@ -1,10 +1,9 @@
 
-
-function Quote(){
+function Quote({quotsArr}){
      
    return (
        <blockquote>
-        this is mido
+        this is mido{console.log(quotsArr)}
        </blockquote>
    )
    }
