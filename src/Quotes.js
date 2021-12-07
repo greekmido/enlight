@@ -1,12 +1,18 @@
+import React,{useState}  from 'react';
 
-function Quote({quotsArr}){
-     
-   return (
+function Quotes(props){
+   const [currentQuote, setCurrent] = useState(props.qArr[Math.floor(Math.random() * 101)]);
+    
+   return (<div>
        <blockquote>
-        this is mido{console.log(quotsArr)}
+        {currentQuote.quote}
        </blockquote>
+      <p>
+          Author: {currentQuote.author}
+      </p>
+   </div>
    )
    }
 
 
-export default Quote;
+export default Quotes;
