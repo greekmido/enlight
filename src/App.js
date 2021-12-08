@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Quotes  from './Quotes';
-import React,{useState,useEffect} from 'react';
+import React,{useState,useEffect, useRef} from 'react';
 
 function App() {
 
   const [quotesArr, setArray] = useState([]);
   
+  const randomize = useRef(null);
 
    
   useEffect(()=>{   
@@ -23,8 +24,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         {quotesArr.length===0 && <h2>Loading ....</h2>}
-        {quotesArr.length !==0 && <Quotes qArr={quotesArr} randfunc={()=>console.log}/>}
-        <button onClick={()=>console.log()}>enlighten me!!</button>
+        {quotesArr.length !==0 && <Quotes qArr={quotesArr} randFunc={randomize}/>}
+        <button onClick={()=>randomize.current}>enlighten me!!</button>
         <a
           className="App-link"
           href="https://reactjs.org"
