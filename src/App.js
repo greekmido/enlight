@@ -33,15 +33,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         {quotesArr.length===0 && <h2>Loading ....</h2>}
         {quotesArr.length !==0 && <Quotes randQuote={currentQuote}/>}
-        <button onClick={()=>newQuote()}>enlighten me!!</button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button className="btn btn-secondary" onClick={()=>newQuote()}>enlighten me!!</button>
       </header>
     </div>
   );
