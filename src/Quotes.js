@@ -1,21 +1,15 @@
-import React,{useEffect, useState}  from 'react';
+import React  from 'react';
 
 function Quotes(props){
-   const [currentQuote, setCurrent] = useState(props.qArr[Math.floor(Math.random() * 101)]);
-   console.log(props.qArr);
-    useEffect(()=>{
-        props.randFunc.current=childRand()
-    },[])
-
-    function childRand(){
-        setCurrent(props.qArr[Math.floor(Math.random() * 101)]);
-    }
+  // const [currentQuote, setCurrent] = useState(props.qArr[Math.floor(Math.random() * 101)]);
+   
+  
    return (<div>
        <blockquote>
-        {currentQuote.quote}
+        {props.randQuote.quote}
        </blockquote>
       <p>
-          Author: {currentQuote.author}
+          Author: {props.randQuote.author}
       </p>
    </div>
    )
