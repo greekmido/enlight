@@ -22,9 +22,8 @@ function App() {
       setCurrent(data.quotes[randomize()]);
     }).catch(e=>console.log(`Error fetching quotes${e}`));
   },[]);
-  //currentQuote.quote!==null && console.log("its not null");
-  //setCurrent(()=>quotesArr[Math.floor(Math.random() * 101)]);
  
+  const toShare=currentQuote.quote+"     :"+currentQuote.author;
 
   return (
     
@@ -34,6 +33,11 @@ function App() {
         {quotesArr.length===0 && <h2>Loading ....</h2>}
         {quotesArr.length !==0 && <Quotes randQuote={currentQuote}/>}
         <button className="btn btn-secondary" onClick={()=>newQuote()}>enlighten me!!</button>
+        <br/>        
+        <div>
+          nice ? 
+        <a class="btn btn-info" href={`https://twitter.com/intent/tweet?text=${toShare}`}rel="noopener">Tweet</a>
+        </div>
       </header>
     </div>
   );

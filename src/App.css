@@ -12,7 +12,16 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.fa {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
