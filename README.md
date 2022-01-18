@@ -1,5 +1,5 @@
 # enlight 
-**a random quote generator 
+ **a random quote generator**
 
 - built with react functional components
 - makes a call to an external api
