@@ -2,7 +2,7 @@
   "name": "enlight",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://greekmido.github.io/enlight",
+  "homepage": "https://shellparse.github.io/enlight",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.0",
     "@testing-library/react": "^11.2.7",
