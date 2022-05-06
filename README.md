@@ -7,7 +7,7 @@
 - with a button to generate new ones
 - have a collection of 100 quotes
 
-[![enlight](https://img.shields.io/static/v1?label=Enlight&message=Live&color=gray&labelColor=green)](https://greekmido.github.io/enlight/)
+[![enlight](https://img.shields.io/static/v1?label=Enlight&message=Live&color=gray&labelColor=green)](https://shellparse.github.io/enlight/)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
